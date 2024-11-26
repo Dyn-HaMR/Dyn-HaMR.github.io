@@ -18,6 +18,24 @@
 		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 	}
 </style>
+
+<style>
+  .abstract-container {
+    max-width: 800px; /* Set the maximum width for the block */
+    margin: 0 auto; /* Center the block horizontally */
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px; /* Add padding inside the block */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: justify; /* Align text for better readability */
+  }
+
+  .abstract-container h2 {
+    text-align: center; /* Center the Abstract heading */
+  }
+</style>
+
+
 <html>
 <head>
   <meta charset="utf-8">
@@ -185,16 +203,12 @@
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container">
-    <div class="abstract-container">
-      <h2 class="title is-3 has-text-centered">Abstract</h2>
-      <div class="content has-text-justified">
-        <p>
-          We propose Dyn-HaMR, to the best of our knowledge, the first approach to reconstruct 4D global hand motion from monocular videos recorded by dynamic cameras in the wild. Reconstructing accurate 3D hand meshes from monocular videos is a crucial task for understanding human behaviour, with significant applications in augmented and virtual reality (AR/VR). However, existing methods for monocular hand reconstruction typically rely on a weak perspective camera model, which simulates hand motion within a limited camera frustum. As a result, these approaches struggle to recover the full 3D global trajectory and often produce noisy or incorrect depth estimations, particularly when the video is captured by dynamic or moving cameras, which is common in egocentric scenarios. Our \name~consists of a multi-stage, multi-objective optimization pipeline, that factors in (i) simultaneous localization and mapping (SLAM) to robustly estimate relative camera motion, (ii) an interacting-hand prior for generative infilling and to refine the interaction dynamics, ensuring plausible recovery under (self-)occlusions, and (iii) hierarchical initialization through a combination of state-of-the-art hand tracking methods. Through extensive evaluations on both in-the-wild and indoor datasets, we show that our approach significantly outperforms state-of-the-art methods in terms of 4D global mesh recovery. This establishes a new benchmark for hand motion reconstruction from monocular video with moving cameras.
-        </p>
-      </div>
-    </div>
+<section class="section">
+  <div class="abstract-container">
+    <h2>Abstract</h2>
+    <p>
+      We propose Dyn-HaMR, to the best of our knowledge, the first approach to reconstruct 4D global hand motion...
+    </p>
   </div>
 </section>
 <!-- End paper abstract -->
