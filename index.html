@@ -20,10 +20,43 @@
 </style>
 
 <style>
-  .title-shadow {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); /* Subtle and light shadow */
-    font-weight: bold; /* Ensure the title stays bold */
-  }
+    /* Title Shadow */
+    .title-shadow {
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Softer shadow */
+        font-weight: bold; /* Ensure the title is bold */
+        font-size: 3rem; /* Slightly larger font for emphasis */
+        font-family: 'Arial', sans-serif; /* Consistent font */
+        color: #333; /* Darker gray for softer appearance */
+    }
+
+    /* Button Styles */
+    .custom-button {
+        display: inline-block; /* Ensures proper spacing and structure */
+        background-color: #007bff; /* Primary blue color */
+        color: white; /* White text */
+        font-family: 'Arial', sans-serif; /* Consistent font */
+        font-size: 1rem; /* Standard button text size */
+        padding: 10px 20px; /* Add padding for better spacing */
+        border: none; /* Remove borders */
+        border-radius: 25px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor for interactivity */
+        text-decoration: none; /* Remove underline for links */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: all 0.3s ease; /* Smooth hover effect */
+    }
+
+    .custom-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+        transform: scale(1.05); /* Small scale-up effect */
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: center; /* Center buttons horizontally */
+        gap: 10px; /* Space between buttons */
+        margin-top: 20px; /* Space above the buttons */
+    }
 </style>
 
 
@@ -102,81 +135,56 @@
 </head>
 <body>
 
-
-  <section class="hero">
+<section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title title-shadow">Dyn-HaMR: Recovering 4D Interacting Hand Motion from a Dynamic Camera</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://github.com/ZhengdiYu" target="_blank">Zhengdi Yu</a>,</span>
-                <span class="author-block">
-                  <a href="https://scholar.google.com/citations?user=QKOH5iYAAAAJ&hl=en&oi=ao" target="_blank">Stefanos Zafeiriou</a>,
-                  <span class="author-block">
-                    <a href="https://tolgabirdal.github.io/" target="_blank">Tolga Birdal</a>
-                    <span class="author-block">
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Imperial College London<br><!--CVPR 2023</span>-->
-                    <!--<span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <!-- Title Section -->
+                    <h1 class="title is-1 publication-title title-shadow">
+                        Dyn-HaMR: Recovering 4D Interacting Hand Motion from a Dynamic Camera
+                    </h1>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">
+                            <a href="https://github.com/ZhengdiYu" target="_blank">Zhengdi Yu</a>,</span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=QKOH5iYAAAAJ&hl=en&oi=ao" target="_blank">Stefanos Zafeiriou</a>,
+                            <span class="author-block">
+                                <a href="https://tolgabirdal.github.io/" target="_blank">Tolga Birdal</a>
+                            </span>
                         </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+                    </div>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">Imperial College London</span>
+                    </div>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/ZhengdiYu/" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+                    <!-- Buttons Section -->
+                    <div class="button-container">
+                        <!-- Paper Button -->
+                        <a href="https://arxiv.org/" target="_blank" class="custom-button">
+                            <i class="fas fa-file-pdf"></i> Paper
+                        </a>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                        <!-- Supplementary Button -->
+                        <a href="static/pdfs/supplementary_material.pdf" target="_blank" class="custom-button">
+                            <i class="fas fa-file-pdf"></i> Supplementary
+                        </a>
+
+                        <!-- Code Button -->
+                        <a href="https://github.com/ZhengdiYu/" target="_blank" class="custom-button">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+
+                        <!-- ArXiv Button -->
+                        <a href="https://arxiv.org/abs/" target="_blank" class="custom-button">
+                            <i class="ai ai-arxiv"></i> arXiv
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
 <!-- Teaser video-->
