@@ -273,8 +273,9 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Video Section -->
-<div class="video-section" style="max-width: 800px; margin: 40px auto; text-align: center; background: #ffffff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+<!-- Combined Video and AI-generated Voice Section -->
+<div class="media-section" style="max-width: 800px; margin: 40px auto; text-align: center; background: #ffffff; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <!-- Video Player -->
     <video controls style="width: 100%; border-radius: 10px; aspect-ratio: 16 / 9;">
         <source src="static/videos/dyn_hamr_demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -282,21 +283,18 @@
     <p style="font-family: 'Arial', sans-serif; font-size: 1.2rem; color: #444; font-weight: bold; margin-top: 15px;">
         Global Hand Motion Reconstruction Results of Dyn-HaMR
     </p>
-</div>
-	
-<!-- Audio Section -->
-<div class="audio-section">
+
+    <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;"> <!-- Separator -->
+
     <!-- Audio Player -->
-    <audio controls>
-        <source src="static/audio/ai_generated_intro.wav" type="audio/mpeg">
+    <audio controls style="width: 100%; border-radius: 5px;">
+        <source src="static/audio/ai_generated_intro.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-
-    <!-- Caption -->
-    <div class="audio-caption">
-        <i class="fas fa-microphone-alt"></i> <!-- Microphone Icon -->
-        <span>AI-generated Introduction</span>
-    </div>
+    <p style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #666; font-weight: normal; margin-top: 15px;">
+        <i class="fas fa-microphone-alt" style="font-size: 1.2rem; color: #007bff; margin-right: 10px;"></i>
+        AI-generated Introduction
+    </p>
 </div>
 
 <!-- Method -->
