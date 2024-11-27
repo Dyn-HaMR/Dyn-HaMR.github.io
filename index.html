@@ -80,7 +80,42 @@
   }
 </style>
 
+<style>
+    /* Audio Section Styling */
+    .audio-section {
+        max-width: 600px; /* Limit the width */
+        margin: 30px auto; /* Center align */
+        background-color: #f9f9f9; /* Light background */
+        padding: 20px; /* Add padding inside the section */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        text-align: center; /* Center align text and content */
+    }
 
+    /* Audio Player Styling */
+    .audio-section audio {
+        width: 100%; /* Make the audio player responsive */
+        border-radius: 5px; /* Slightly rounded corners for the audio player */
+        outline: none; /* Remove default focus outline */
+    }
+
+    /* Caption Styling */
+    .audio-caption {
+        font-family: 'Arial', sans-serif; /* Consistent font */
+        font-size: 1rem; /* Standard font size */
+        color: #666; /* Subtle text color */
+        margin-top: 15px; /* Add spacing above the caption */
+        display: flex; /* Flexbox for alignment */
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        gap: 10px; /* Space between icon and text */
+    }
+
+    .audio-caption i {
+        font-size: 1.2rem; /* Slightly larger icon */
+        color: #007bff; /* Blue color for the icon */
+    }
+</style>
 
 <html>
 <head>
@@ -239,17 +274,18 @@
 <!-- End paper abstract -->
 
 <!-- Audio Section -->
-<div class="audio-section" style="text-align: center; margin-top: 30px;">
+<div class="audio-section">
     <!-- Audio Player -->
     <audio controls>
-        <source src="static/audio/ai_generated_intro.wav" type="audio/mpeg">
+        <source src="static/audio/ai_generated_intro.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
     <!-- Caption -->
-    <p style="font-family: 'Arial', sans-serif; font-size: 1rem; color: #555; margin-top: 10px;">
-        AI-generated Introduction
-    </p>
+    <div class="audio-caption">
+        <i class="fas fa-microphone-alt"></i> <!-- Microphone Icon -->
+        <span>AI-generated Introduction</span>
+    </div>
 </div>
 
 <!-- Method -->
