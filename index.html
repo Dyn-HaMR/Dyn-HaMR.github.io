@@ -311,34 +311,38 @@
 <!-- Results -->
 <section class="hero is-light">
 <!-- Results Section -->
-<div class="results-container" style="max-width: 800px; margin: 40px auto; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+<div class="results-container" style="max-width: 1200px; margin: 40px auto; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
     <h2 style="text-align: center; font-size: 2rem; font-weight: bold;">Results</h2>
-    <p style="text-align: justify;">
+    <p style="text-align: justify; margin-bottom: 20px;">
         Below are qualitative results showcasing the performance of Dyn-HaMR across various datasets and scenarios.
     </p>
 
-    <!-- Results Images -->
-    <div id="results-carousel" class="carousel results-carousel" style="margin-top: 20px;">
-        <!-- First Image -->
-        <div class="item">
-            <img src="static/images/interhand.jpg" alt="InterHand Results" style="width: 100%; border-radius: 10px;">
-            <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
-                Qualitative comparison with on InterHand 2.6M test dataset. Our approach generates better results.
-            </h2>
+    <!-- Flexbox Container for Galleries -->
+    <div style="display: flex; justify-content: space-between; gap: 20px;">
+        <!-- Left Gallery -->
+        <div style="flex: 1;">
+            <h3 style="text-align: center; font-size: 1.5rem;">Gallery 1</h3>
+            <div id="results-carousel-1" class="carousel results-carousel">
+                <div class="item">
+                    <img src="static/images/interhand.jpg" alt="InterHand Results" style="width: 100%; border-radius: 10px;">
+                    <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
+                        Qualitative comparison with on InterHand 2.6M test dataset. Our approach generates better results.
+                    </h2>
+                </div>
+            </div>
         </div>
-        <!-- Second Image -->
-        <div class="item">
-            <img src="static/images/wild.jpg" alt="Wild Results" style="width: 100%; border-radius: 10px;">
-            <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
-                Results from RGB2Hands dataset and in-the-wild videos.
-            </h2>
-        </div>
-        <!-- Third Image -->
-        <div class="item">
-            <img src="static/images/ego.jpg" alt="Ego View Results" style="width: 100%; border-radius: 10px;">
-            <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
-                Ego-view results from RGB2Hands dataset and in-the-wild videos.
-            </h2>
+
+        <!-- Right Gallery -->
+        <div style="flex: 1;">
+            <h3 style="text-align: center; font-size: 1.5rem;">Gallery 2</h3>
+            <div id="results-carousel-2" class="carousel results-carousel">
+                <div class="item">
+                    <img src="static/images/wild.jpg" alt="Wild Results" style="width: 100%; border-radius: 10px;">
+                    <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
+                        Results from RGB2Hands dataset and in-the-wild videos.
+                    </h2>
+                </div>
+            </div>
         </div>
     </div>
 </div>
