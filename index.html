@@ -19,6 +19,27 @@
 	}
 </style>
 
+<!-- Add CSS for Carousel -->
+<style>
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.carousel p {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+}
+</style>
+
 <style>
     /* Title Shadow */
     .title-shadow {
@@ -322,22 +343,30 @@
         <!-- Gallery 1 -->
         <div style="flex: 1;">
             <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 10px;">Gallery 1</h3>
-            <div class="gallery-box" style="background: #f9f9f9; padding: 10px; border-radius: 10px;">
-                <img src="static/images/interhand.jpg" alt="InterHand Results" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-                <p style="text-align: center;">Qualitative comparison with InterHand 2.6M test dataset.</p>
-                <img src="static/images/wild.jpg" alt="Wild Results" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-                <p style="text-align: center;">Results from RGB2Hands dataset and in-the-wild videos.</p>
+            <div id="gallery-1" class="carousel" style="background: #f9f9f9; padding: 10px; border-radius: 10px;">
+                <div>
+                    <img src="static/images/interhand.jpg" alt="InterHand Results" style="width: 100%; border-radius: 10px;">
+                    <p style="text-align: center;">Qualitative comparison with InterHand 2.6M test dataset.</p>
+                </div>
+                <div>
+                    <img src="static/images/wild.jpg" alt="Wild Results" style="width: 100%; border-radius: 10px;">
+                    <p style="text-align: center;">Results from RGB2Hands dataset and in-the-wild videos.</p>
+                </div>
             </div>
         </div>
 
         <!-- Gallery 2 -->
         <div style="flex: 1;">
             <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 10px;">Gallery 2</h3>
-            <div class="gallery-box" style="background: #f9f9f9; padding: 10px; border-radius: 10px;">
-                <img src="static/images/ego.jpg" alt="Ego View Results" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-                <p style="text-align: center;">Ego-view results from RGB2Hands dataset and in-the-wild videos.</p>
-                <img src="static/images/result_comparison.jpg" alt="Comparison Results" style="width: 100%; border-radius: 10px; margin-bottom: 10px;">
-                <p style="text-align: center;">Hand-object interaction on web videos.</p>
+            <div id="gallery-2" class="carousel" style="background: #f9f9f9; padding: 10px; border-radius: 10px;">
+                <div>
+                    <img src="static/images/ego.jpg" alt="Ego View Results" style="width: 100%; border-radius: 10px;">
+                    <p style="text-align: center;">Ego-view results from RGB2Hands dataset and in-the-wild videos.</p>
+                </div>
+                <div>
+                    <img src="static/images/result_comparison.jpg" alt="Comparison Results" style="width: 100%; border-radius: 10px;">
+                    <p style="text-align: center;">Hand-object interaction on web videos.</p>
+                </div>
             </div>
         </div>
     </div>
