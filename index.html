@@ -353,40 +353,47 @@
 	
 <!-- Results -->
 <section class="hero is-light">
-<div class="results-container" style="max-width: 1200px; margin: 40px auto; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
-    <h2 style="text-align: center; font-size: 2rem; font-weight: bold;">Results</h2>
-    <p style="text-align: center; margin-bottom: 20px;">
-        Below are qualitative results showcasing the performance of Dyn-HaMR across various datasets and scenarios.
-    </p>
-
-    <!-- Two Galleries Side-by-Side -->
-    <div style="display: flex; gap: 20px; justify-content: center;">
-
-        <!-- Gallery 1 -->
-        <div class="gallery-box" style="flex: 1; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-            <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 10px;">Gallery 1</h3>
-            <div id="gallery-1-carousel" class="carousel">
-                <!-- Carousel Items -->
-                <div class="carousel-item">
-                    <img src="static/images/interhand.jpg" alt="InterHand Results" style="width: 100%; border-radius: 10px;">
-                </div>
-                <p style="text-align: center; margin-top: 10px;">Qualitative comparison with InterHand 2.6M test dataset.</p>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-half">
+          <!-- First Gallery -->
+          <div id="results-carousel-1" class="carousel results-carousel">
+            <div class="item">
+              <img src="static/images/inter.jpg" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                Interacting hand and single hand reconstruction. Here, the images in (e) are selected from RGB2Hands benchmark. The others are from web videos.
+              </h2>
             </div>
+            <div class="item">
+              <img src="static/images/obj.jpg" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                Hand-object interaction on web videos (watch videos above for more details).
+              </h2>
+            </div>
+          </div>
         </div>
 
-        <!-- Gallery 2 -->
-        <div class="gallery-box" style="flex: 1; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-            <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 10px;">Gallery 2</h3>
-            <div id="gallery-2-carousel" class="carousel">
-                <!-- Carousel Items -->
-                <div class="carousel-item">
-                    <img src="static/images/wild.jpg" alt="Wild Results" style="width: 100%; border-radius: 10px;">
-                </div>
-                <p style="text-align: center; margin-top: 10px;">Results from RGB2Hands dataset and in-the-wild videos.</p>
+        <div class="column is-half">
+          <!-- Second Gallery -->
+          <div id="results-carousel-2" class="carousel results-carousel">
+            <div class="item">
+              <img src="static/images/inter.jpg" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                Interacting hand and single hand reconstruction. Here, the images in (e) are selected from RGB2Hands benchmark. The others are from web videos.
+              </h2>
             </div>
+            <div class="item">
+              <img src="static/images/obj.jpg" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                Hand-object interaction on web videos (watch videos above for more details).
+              </h2>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
 </section>
 	
 <section class="hero is-light">
