@@ -19,7 +19,7 @@
 	}
 </style>
 
-<!-- Add CSS for Carousel -->
+<!-- Add CSS for Galleries -->
 <style>
 .results-container {
     max-width: 1200px;
@@ -28,6 +28,20 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.carousel-item {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .carousel img {
@@ -341,23 +355,24 @@
         Below are qualitative results showcasing the performance of Dyn-HaMR across various datasets and scenarios.
     </p>
 
-    <!-- Flexbox for Side-by-Side Galleries -->
-    <div style="display: flex; justify-content: space-between; gap: 20px;">
+    <!-- Carousel -->
+    <div id="results-carousel" class="carousel" style="display: flex; justify-content: center; gap: 20px;">
+
         <!-- Gallery 1 -->
-        <div style="flex: 1; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-            <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 10px;">Gallery 1</h3>
-            <div class="carousel">
+        <div class="carousel-item">
+            <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 10px;">Gallery 1</h3>
                 <img src="static/images/interhand.jpg" alt="InterHand Results" style="width: 100%; border-radius: 10px;">
-                <p style="text-align: center;">Qualitative comparison with InterHand 2.6M test dataset.</p>
+                <p style="text-align: center; margin-top: 10px;">Qualitative comparison with InterHand 2.6M test dataset.</p>
             </div>
         </div>
 
         <!-- Gallery 2 -->
-        <div style="flex: 1; background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-            <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 10px;">Gallery 2</h3>
-            <div class="carousel">
+        <div class="carousel-item">
+            <div style="background: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                <h3 style="text-align: center; font-size: 1.5rem; margin-bottom: 10px;">Gallery 2</h3>
                 <img src="static/images/wild.jpg" alt="Wild Results" style="width: 100%; border-radius: 10px;">
-                <p style="text-align: center;">Results from RGB2Hands dataset and in-the-wild videos.</p>
+                <p style="text-align: center; margin-top: 10px;">Results from RGB2Hands dataset and in-the-wild videos.</p>
             </div>
         </div>
     </div>
