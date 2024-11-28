@@ -310,36 +310,37 @@
 	
 <!-- Results -->
 <section class="hero is-light">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-        <h2 class="title is-3">Results</h2>
-	      <div id="results-carousel" class="carousel results-carousel">
-	       <div class="item">
-		<!-- Your image here -->
-		<img src="static/images/interhand.jpg" alt="MY ALT TEXT"/>
-		<h2 class="subtitle has-text-centered">
-		  Qualitative comparison with on InterHand 2.6M test dataset. Our approach generates better results in two-hand reconstruction, particularly in challenging cases such as external occlusion (1), truncation (3-4), or bending one finger with another hand (6). More results can be found in the Supplementary Material.
-		</h2>
-	      </div>
-	      <div class="item">
-		<!-- Your image here -->
-		<img src="static/images/wild.jpg" alt="MY ALT TEXT"/>
-		<h2 class="subtitle has-text-centered">
-		  Results from RGB2Hands dataset and in-the-wild videos.
-		</h2>   
-	      </div>
-	      <div class="item">
-		<!-- Your image here -->
-		<img src="static/images/ego.jpg" alt="MY ALT TEXT"/>
-		<h2 class="subtitle has-text-centered">
-		  Ego-view results from RGB2Hands dataset and in-the-wild videos.
-		</h2>
-	      </div>
+<!-- Results Section -->
+<div class="results-container" style="max-width: 800px; margin: 40px auto; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; font-size: 2rem; font-weight: bold;">Results</h2>
+    <p style="text-align: justify;">
+        Below are qualitative results showcasing the performance of Dyn-HaMR across various datasets and scenarios.
+    </p>
+
+    <!-- Results Images -->
+    <div id="results-carousel" class="carousel results-carousel" style="margin-top: 20px;">
+        <!-- First Image -->
+        <div class="item">
+            <img src="static/images/interhand.jpg" alt="InterHand Results" style="width: 100%; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
+                Qualitative comparison with on InterHand 2.6M test dataset. Our approach generates better results.
+            </h2>
+        </div>
+        <!-- Second Image -->
+        <div class="item">
+            <img src="static/images/wild.jpg" alt="Wild Results" style="width: 100%; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
+                Results from RGB2Hands dataset and in-the-wild videos.
+            </h2>
+        </div>
+        <!-- Third Image -->
+        <div class="item">
+            <img src="static/images/ego.jpg" alt="Ego View Results" style="width: 100%; border-radius: 10px;">
+            <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
+                Ego-view results from RGB2Hands dataset and in-the-wild videos.
+            </h2>
+        </div>
     </div>
-  </div>
-</div>
 </div>
 </section>
 	
