@@ -103,6 +103,18 @@
     }
 </style>
 
+<style>
+  .title-box {
+    border: 2px solid #333;         /* Solid border */
+    background-color: #f9f9f9;      /* Light background */
+    padding: 20px;                  /* Spacing around the title */
+    margin: 20px auto;              /* Center horizontally + top/bottom spacing */
+    border-radius: 10px;            /* Rounded corners */
+    max-width: 800px;               /* Optional, keeps box from being too wide */
+    text-align: center;             /* Center the title text */
+  }
+</style>
+
 
 <style>
   .abstract-container {
@@ -215,55 +227,63 @@
 <body>
 
 <section class="hero">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered">
-                <div class="column has-text-centered">
-                    <!-- Title Section -->
-                    <h1 class="title is-1 publication-title title-shadow">
-                        Dyn-HaMR: Recovering 4D Interacting Hand Motion from a Dynamic Camera
-                    </h1>
-                    <div class="is-size-5 publication-authors">
-                        <span class="author-block">
-                            <a href="https://.com/ZhengdiYu" target="_blank">Zhengdi Yu</a>,</span>
-                        <span class="author-block">
-                            <a href="https://scholar.google.com/citations?user=QKOH5iYAAAAJ&hl=en&oi=ao" target="_blank">Stefanos Zafeiriou</a>,
-                            <span class="author-block">
-                                <a href="https://tolgabirdal.github.io/" target="_blank">Tolga Birdal</a>
-                            </span>
-                        </span>
-                    </div>
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
 
-                    <div class="is-size-5 publication-authors">
-                        <span class="author-block">Imperial College London</span>
-                    </div>
+          <!-- Title Section in a Bulma box -->
+          <div class="box" style="display:inline-block; margin-bottom:20px;">
+            <h1 class="title is-1 publication-title title-shadow">
+              Dyn-HaMR: Recovering 4D Interacting Hand Motion from a Dynamic Camera
+            </h1>
+          </div>
 
-                    <!-- Buttons Section -->
-                    <div class="button-container">
-                        <!-- Paper Button -->
-                        <a href="https://arxiv.org/" target="_blank" class="custom-button">
-                            <i class="fas fa-file-pdf"></i> Paper
-                        </a>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://.com/ZhengdiYu" target="_blank">Zhengdi Yu</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=QKOH5iYAAAAJ&hl=en&oi=ao" target="_blank">Stefanos Zafeiriou</a>,
+              <span class="author-block">
+                <a href="https://tolgabirdal.github.io/" target="_blank">Tolga Birdal</a>
+              </span>
+            </span>
+          </div>
 
-                        <!-- Code Button -->
-                        <a href="https://github.com/ZhengdiYu/Dyn-HaMR" target="_blank" class="custom-button">
-                            <i class="fab fa-github"></i> Code
-                        </a>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Imperial College London</span>
+          </div>
 
-                        <!-- ArXiv Button -->
-                        <a href="https://arxiv.org/abs/" target="_blank" class="custom-button">
-                            <i class="ai ai-arxiv"></i> arXiv
-                        </a>
-			<!-- Video Button -->
-			<a href="https://youtube.com/" target="_blank" class="custom-button">
-			    <i class="fas fa-video"></i> Video
-			</a>
-                    </div>
-                </div>
-            </div>
+          <!-- Buttons Section -->
+          <div class="button-container">
+            <!-- Paper Button -->
+            <a href="https://arxiv.org/" target="_blank" class="custom-button">
+              <i class="fas fa-file-pdf"></i> Paper
+            </a>
+
+            <!-- Code Button -->
+            <a href="https://github.com/ZhengdiYu/Dyn-HaMR" target="_blank" class="custom-button">
+              <i class="fab fa-github"></i> Code
+            </a>
+
+            <!-- ArXiv Button -->
+            <a href="https://arxiv.org/abs/" target="_blank" class="custom-button">
+              <i class="ai ai-arxiv"></i> arXiv
+            </a>
+
+            <!-- Video Button -->
+            <a href="https://youtube.com/" target="_blank" class="custom-button">
+              <i class="fas fa-video"></i> Video
+            </a>
+          </div>
+
         </div>
+      </div>
     </div>
+  </div>
 </section>
+
 
 <!-- Teaser video-->
 <section class="hero teaser">
@@ -470,7 +490,6 @@
            <div class="column">
              <div class="content">
                <div class="publication-video">
-               <!-- Youtube embed code here -->
                <iframe width="560" height="315" src="https://www.youtube.com/embed/-HTr_-DLqCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
              </div>
             </div>
