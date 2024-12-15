@@ -37,7 +37,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.gallery-box h3 {
+.y-box h3 {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -371,83 +371,92 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container" style="box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); border-radius: 15px; padding: 20px; background-color: #ffffff;">
-      <!-- Title for the Section -->
+      
+      <!-- Section Title -->
       <h2 class="title has-text-centered" style="margin-bottom: 20px;">Gallery</h2>
 
       <div class="columns is-centered has-text-centered">
+        
+        <!-- LEFT COLUMN: #results-carousel-1 -->
         <div class="column is-half">
-          <!-- First Gallery -->
           <div id="results-carousel-1" class="carousel results-carousel">
+            <!-- HOI4D Placeholder -->
             <div class="item">
-              <img src="static/images/h2o.png" alt="MY ALT TEXT" />
+              <img src="static/images/hoi4d.png" alt="HOI4D dataset" />
               <h2 class="subtitle has-text-centered">
-                Qualitative comparison with state-of-the-art method <a href="https://arxiv.org/abs/2312.05251" target="_blank" rel="noopener noreferrer">HaMeR</a>. The first row is from the <a href="https://arxiv.org/abs/2104.11181" target="_blank" rel="noopener noreferrer">H2O</a> dataset, while the second & third rows are from the <a href="https://arxiv.org/abs/2203.01577" target="_blank" rel="noopener noreferrer">HOI4D</a> dataset and web videos respectively.
+                [Placeholder: HOI4D dataset caption]
               </h2>
             </div>
+            <!-- FPHA Placeholder -->
             <div class="item">
-              <img src="static/images/hoi4d.png" alt="MY ALT TEXT" />
+              <img src="static/images/fpha.png" alt="FPHA dataset" />
               <h2 class="subtitle has-text-centered">
-                Hand-object interaction on web videos (watch videos above for more details).
+                [Placeholder: FPHA dataset caption]
+              </h2>
+            </div>
+            <!-- EgoDexter Placeholder -->
+            <div class="item">
+              <img src="static/images/egodexter.png" alt="EgoDexter dataset" />
+              <h2 class="subtitle has-text-centered">
+                [Placeholder: EgoDexter dataset caption]
               </h2>
             </div>
           </div>
         </div>
 
+        <!-- RIGHT COLUMN -->
         <div class="column is-half">
-          <!-- Second Gallery -->
+          
+          <!-- TOP-RIGHT CAROUSEL: #results-carousel-2 (InterHand images + original captions) -->
           <div id="results-carousel-2" class="carousel results-carousel">
             <div class="item">
-              <img src="static/images/interhand_1.png" alt="MY ALT TEXT" />
+              <img src="static/images/interhand_1.png" alt="InterHand2.6M - Example 1" />
               <h2 class="subtitle has-text-centered">
-                 Qualitative evaluation on <a href="https://arxiv.org/abs/2008.09309" target="_blank" rel="noopener noreferrer">InterHand2.6M</a> dataset
+                Qualitative evaluation on <a href="https://arxiv.org/abs/2008.09309" target="_blank" rel="noopener noreferrer">InterHand2.6M</a> dataset
               </h2>
             </div>
             <div class="item">
-              <img src="static/images/interhand_2.png" alt="MY ALT TEXT" />
+              <img src="static/images/interhand_2.png" alt="InterHand2.6M - Complex Interactions" />
               <h2 class="subtitle has-text-centered">
-                Qualitative results of hand pose estimation under complex hand interactions and hand-object interaction. In the figure, (a)-(b) show the samples from <a href="https://arxiv.org/abs/2008.09309" target="_blank" rel="noopener noreferrer">InterHand2.6M</a> dataset, while (f)-(i) are from <a href="https://arxiv.org/abs/2104.11181" target="_blank" rel="noopener noreferrer">H2O</a>, <a href="https://arxiv.org/abs/1704.02463" target="_blank" rel="noopener noreferrer">FPHA</a>, <a href="https://arxiv.org/abs/2203.01577" target="_blank" rel="noopener noreferrer">HOI4D</a> and <a href="https://arxiv.org/abs/1704.02201" target="_blank" rel="noopener noreferrer">EgoDexter</a>, respectively. Finally, (e) and (j) are reconstruction results from in-the-wild web videos.
+                Qualitative results of hand pose estimation under complex hand interactions and hand-object interaction.
+                In the figure, (a)-(b) show samples from <a href="https://arxiv.org/abs/2008.09309" target="_blank" rel="noopener noreferrer">InterHand2.6M</a>, 
+                while (f)-(i) are from <a href="https://arxiv.org/abs/2104.11181" target="_blank" rel="noopener noreferrer">H2O</a>, 
+                <a href="https://arxiv.org/abs/1704.02463" target="_blank" rel="noopener noreferrer">FPHA</a>,
+                <a href="https://arxiv.org/abs/2203.01577" target="_blank" rel="noopener noreferrer">HOI4D</a> and 
+                <a href="https://arxiv.org/abs/1704.02201" target="_blank" rel="noopener noreferrer">EgoDexter</a>, respectively. 
+                Finally, (e) and (j) are reconstruction results from in-the-wild web videos.
               </h2>
             </div>
             <div class="item">
-              <img src="static/images/interhand_3.png" alt="MY ALT TEXT" />
+              <img src="static/images/interhand_3.png" alt="InterHand2.6M - SOTA Comparison" />
               <h2 class="subtitle has-text-centered">
-                Comparison with state-of-the-art hand reconstruction approach (static camera) on <a href="https://arxiv.org/abs/2008.09309" target="_blank" rel="noopener noreferrer">InterHand2.6M</a>. We compare our method with state-of-the-art hand reconstruction approach <a href="https://arxiv.org/abs/2312.05251" target="_blank" rel="noopener noreferrer">HaMeR</a> under challenging hand interactions
+                Comparison with state-of-the-art hand reconstruction approach (static camera) on 
+                <a href="https://arxiv.org/abs/2008.09309" target="_blank" rel="noopener noreferrer">InterHand2.6M</a>.
+                We compare our method with state-of-the-art hand reconstruction approach 
+                <a href="https://arxiv.org/abs/2312.05251" target="_blank" rel="noopener noreferrer">HaMeR</a> under challenging hand interactions.
               </h2>
             </div>
           </div>
 
-          <!-- Video Gallery Below Gallery 2 as Carousel -->
+          <!-- BOTTOM-RIGHT CAROUSEL: #video-carousel (Now just h2o.png + original caption) -->
           <div id="video-carousel" class="carousel results-carousel" style="margin-top: 20px;">
             <div class="item">
-              <video poster="" id="video1" autoplay controls muted loop width="100%">
-                <source src="static/videos/intro_noshadow.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle has-text-centered">Video Example 1</p>
-            </div>
-            <div class="item">
-              <video poster="" id="video2" autoplay controls muted loop width="100%">
-                <source src="static/videos/v3_body.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle has-text-centered">Video Example 2</p>
-            </div>
-            <div class="item">
-              <video poster="" id="video3" autoplay controls muted loop width="100%">
-                <source src="static/videos/single-cropped.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle has-text-centered">Video Example 3</p>
-            </div>
-            <div class="item">
-              <video poster="" id="video4" autoplay controls muted loop width="100%">
-                <source src="static/videos/qin.mp4" type="video/mp4">
-              </video>
-              <p class="subtitle has-text-centered">Video Example 4</p>
+              <img src="static/images/h2o.png" alt="H2O dataset" />
+              <h2 class="subtitle has-text-centered">
+                Qualitative comparison with state-of-the-art method 
+                <a href="https://arxiv.org/abs/2312.05251" target="_blank" rel="noopener noreferrer">HaMeR</a>. 
+                The first row is from the <a href="https://arxiv.org/abs/2104.11181" target="_blank" rel="noopener noreferrer">H2O</a> dataset, 
+                while the second & third rows are from the <a href="https://arxiv.org/abs/2203.01577" target="_blank" rel="noopener noreferrer">HOI4D</a> dataset and web videos respectively.
+              </h2>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Poster -->
 <section class="hero is-small">
